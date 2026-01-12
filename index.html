@@ -200,7 +200,24 @@
             progressBarFull.style.width = 100 * progress + "%";
           }).then((unityInstance) => {
             loadingBar.style.display = "none";
-            
+            if (unityInstance) 
+			 {
+       		  	   window.addEventListener("message", function (event) 
+				   {
+					if (event.data && event.data.type === "FROM_PARENT") 
+					{
+					  const receivedValue = event.data.data;
+					  console.log("Received from parent:", receivedValue);
+					  // Send to Unity
+					  unityInstance.SendMessage('ScriptManager', 'ReceiveCommand', receivedValue);
+					}
+				  });
+				  
+				  // Detect device type and send to Unity
+				  const deviceType = GetMobileDeviceType();
+				  console.log("Device type detected:", deviceType);
+				  unityInstance.SendMessage('UIManager', 'OnDeviceTypeDetected', deviceType);
+			 }
             window.unityInstance = unityInstance;
             if(!window.camPermissionsGranted) {
               RequestWebcam();
