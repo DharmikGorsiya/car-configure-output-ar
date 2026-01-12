@@ -1,0 +1,59 @@
+ManifestFileVersion: 0
+UnityVersion: 6000.0.62f1
+CRC: 3620233045
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9c9f3a008677f912cc8f389bbc590951
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 385ce7ae23fb2ad7eb04f2f51fdf98a2
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: e62f9c533f016e43a1372f20f09fb9ce
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 28
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 108
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 4dd6ee2bf98e7e7499c63c363472a268, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 17a64d9ee028447d985fe951d225f315, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 198
+  Script: {instanceID: 0}
+- Class: 199
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers:
+- AssemblyName: Assembly-CSharp
+  ClassName: CarColor
+- AssemblyName: Assembly-CSharp
+  ClassName: CarData
+- AssemblyName: Assembly-CSharp
+  ClassName: CarDoor
+- AssemblyName: Assembly-CSharp
+  ClassName: CarLight
+- AssemblyName: Assembly-CSharp
+  ClassName: MainCarColor
+Assets:
+- Assets/ABMaker/Car/ford_everest.prefab
+Dependencies: []
