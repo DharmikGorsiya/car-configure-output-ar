@@ -212,11 +212,6 @@
 					  unityInstance.SendMessage('ScriptManager', 'ReceiveCommand', receivedValue);
 					}
 				  });
-				  
-				  // Detect device type and send to Unity
-				  const deviceType = GetMobileDeviceType();
-				  console.log("Device type detected:", deviceType);
-				  unityInstance.SendMessage('UIManager', 'OnDeviceTypeDetected', deviceType);
 			 }
             window.unityInstance = unityInstance;
             if(!window.camPermissionsGranted) {
